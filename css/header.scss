@@ -1,0 +1,14 @@
+//variables
+$height: 100vh;
+$width: 100%;
+$bgcolor: #7578c0;
+
+.head {
+    display: block;
+    width: $width;
+    min-height: $height;
+    background-image: url("/img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

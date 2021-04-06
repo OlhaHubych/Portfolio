@@ -1,0 +1,12 @@
+$height: 70px;
+$width: 100%;
+$color: white;
+
+.nav-bar {
+    width: $width;
+    height: $height;
+    position: fixed;
+    top: 0;
+    background-color: $color;
+    z-index: 1;
+}
