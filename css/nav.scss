@@ -1,12 +1,70 @@
-$height: 70px;
-$width: 100%;
-$color: white;
-
-.nav-bar {
-    width: $width;
-    height: $height;
-    position: fixed;
-    top: 0;
-    background-color: $color;
-    z-index: 1;
+//--------------- variables ------------------
+@font-face {
+    font-family: head-links;
+    src: url(../fonts/Itim-Regular.ttf);
 }
+$widthNav: 100%;
+$heightNav: 100vh;
+$fontSizeNav: 15px;
+
+$widthMenu: 45%;
+$heightMenuLink: 50px;
+$bgColorMenu: #fffcf4;
+$colorMenuLink: #517869;
+$colorMenuPointing: #9e9e9e;
+
+//-------------------- style ------------------
+nav {
+    height: $heightNav;
+    width: $widthNav;
+    display: flex;
+    font-size: $fontSizeNav;
+
+    .menu-part {
+        width: $widthMenu;
+        background-color: $bgColorMenu;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: $heightMenuLink;
+            font-size: 2rem;
+            font-family: head-links;
+            letter-spacing: 5px;
+            text-decoration: none;
+            color: $colorMenuLink;
+            // #336654 - darkgreen
+
+            &:hover::before {
+                content: "\25B6";
+                color: $colorMenuPointing;
+        
+            }
+
+            @media screen and (max-width: 320px) {
+                font-size: 0.7rem;
+            }
+            @media screen and (min-width: 321px) and (max-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .img-part {
+        width: $widthNav - $widthMenu;
+
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+}
+
+
