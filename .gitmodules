@@ -1,0 +1,18 @@
+[submodule "projects/angular_site"]
+	url = https://github.com/OlhaHubych/Simple-Angular-site.git
+[submodule "projects/authorization"]
+	url = https://github.com/OlhaHubych/Authorization-Page.git
+[submodule "projects/calculator"]
+	url = https://github.com/OlhaHubych/Simple-smart-calculator.git
+[submodule "projects/gameNumber"]
+	url = https://github.com/OlhaHubych/Number-game.git
+[submodule "projects/pizza"]
+	url = https://github.com/OlhaHubych/Pizza-order-page.git
+[submodule "projects/second_site"]
+	url = https://github.com/OlhaHubych/Travel-site-Maldives.git
+[submodule "projects/site"]
+	url = https://github.com/OlhaHubych/Reviewing-hotels.git
+[submodule "projects/table"]
+	url = https://github.com/OlhaHubych/Table-manipulation.git
+[submodule "projects/video"]
+	url = https://github.com/OlhaHubych/Video-player.git
