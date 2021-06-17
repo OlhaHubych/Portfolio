@@ -1,0 +1,228 @@
+//--------------- variables ------------------
+@font-face {
+    font-family: forProjectsPage;
+    src: url(../fonts/Nunito/Nunito-Light.ttf);
+}
+@font-face {
+    font-family: forProjectsPageBold;
+    src: url(../fonts/Nunito/Nunito-Bold.ttf);
+}
+
+$fontSizeAllSection: 15px;
+
+$bgColorCard: #55719e;
+$colorCard: #f3e4bb; 
+$colorForImageBlockCard: white;
+$bgColorPopoutMenu: azure;
+$colorPopoutMenu: black;
+$colorForLinksInDescriptionBlock: #f3e4bb;
+$colorForVisitedLinksInDescriptionBlock: rgb(193, 193, 253);
+$bgColorForLinkButtonCard: #bed1e7;
+$colorBorderForLinkButtonCard: #08b6f1;
+
+$heightForImageBlockCard: 250px;
+$heightForPopoutMenuCard: 17px;
+$widthForPopoutMenuCard: 70px;
+$heightForLinkButton: 40px;
+$widthForFirstLinkButtonCard: 140px;
+$widthForLastLinkButtonCard: 40px;
+$lineHeightForLinkButtonCard: 37px;
+
+$roundedCornersPointCard: 1.8rem;
+$roundedCornersPointForLinkButtonCard: 20px;
+// #55719e
+// #4b78c1
+//----------------- style ---------------------
+
+section {
+    width: 100%;
+    height: fit-content;
+    padding: 0 10px;
+    font-family: forProjectsPage;
+    font-size: $fontSizeAllSection;
+
+    & > h1 {
+        font-family: forProjectsPageBold;
+        text-align: center;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-rows: auto;
+        gap: 10px;
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+    
+        .block {
+            align-self: stretch;
+            height: 100%;
+            background-color: $bgColorCard;
+           
+
+            color: $colorCard;
+            display: flex;
+            flex-direction: column;
+            border-radius: $roundedCornersPointCard;
+            text-align: center;
+
+            .image {
+                width: 100%;
+                height: $heightForImageBlockCard;
+                display: flex;
+                flex-direction: column;
+                color: $colorForImageBlockCard;
+                position: relative;
+                
+                img {
+                    width: 100%;
+                    height: $heightForImageBlockCard;
+                    border-radius: $roundedCornersPointCard;
+                    object-fit: cover;
+                }
+
+                .tech-btn {
+                    width: 100%;
+                    height: fit-content;
+                    padding: 10px;
+                    font-size: 1.15rem;
+                    border-bottom-left-radius: $roundedCornersPointCard;
+                    border-bottom-right-radius: $roundedCornersPointCard;
+                    backdrop-filter: blur(2px) brightness(0.8);
+                    position: absolute;
+                    bottom: -0.5%;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        li {
+                            position: relative;
+
+                            .popout-menu {
+                                position: absolute;
+                                bottom: 100%;
+                                left: -180%;
+                                visibility: hidden;
+                                width: $widthForPopoutMenuCard;
+                                height: $heightForPopoutMenuCard;
+                                background-color: $bgColorPopoutMenu;
+                                color: $colorPopoutMenu;
+                                font-size: 0.8rem;
+                            }
+
+                            &:hover > .popout-menu,
+                            &:focus > .popout-menu,
+                            &:focus-within > .popout-menu {
+                                visibility: visible;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .description {
+                width: 100%;
+                height: 100%;
+                padding: 0 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .mark-link-text > a {
+                    font-family: forProjectsPage;
+                    color: $colorForLinksInDescriptionBlock;
+
+                    &:visited {
+                        color: $colorForVisitedLinksInDescriptionBlock;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+
+                    li {
+                        
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            font-family: forProjectsPageBold;
+                            font-weight: bold;
+                            line-height: $lineHeightForLinkButtonCard;
+                            height: $heightForLinkButton;
+                            border-radius: $roundedCornersPointForLinkButtonCard;
+                            background-color: $bgColorForLinkButtonCard;
+                            border: 2px solid $colorBorderForLinkButtonCard;
+                        
+                        }
+
+                        &:first-child {
+                            width: $widthForFirstLinkButtonCard;
+                        }
+
+                        &:last-child {
+                            width: $widthForLastLinkButtonCard;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 250px) {
+    section {
+        width: fit-content;
+    }
+    .description {
+        height: fit-content;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 530px) {
+    section {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr);
+        justify-self: center;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 531px) and (max-width: 800px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media screen and (min-width: 801px) and (max-width: 1060px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 1061px) and (max-width: 1450px) {
+    .projects-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (min-width: 1451px) and (max-width: 2000px) {
+    .projects-grid {
+        grid-template-columns: repeat(5, 1fr);
+        .block:last-child {
+            grid-column: 3/3;
+        }
+    }
+}
+@media screen and (min-width: 2001px) {
+    .projects-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
