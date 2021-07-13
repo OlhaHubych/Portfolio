@@ -13,14 +13,12 @@
     
 </head>
 <body>
-    <div class="nav-strip">
-
-        <button class="open-sidenav" onclick="openNav()">&equiv;</button>
-
+    <div class="navigation-block">
+        <button class="open-nav" id="openNav">&#61;</button>
         <nav>
-            <div class="sidenav" id="sideNav">
-                <button class="closeButton" onclick="closeNav()">&times;</button>
-                <div class="menu-part sidenav-links">
+            <div class="moving-nav" id="movingNav">
+                <button class="close-nav" id="closeNav">&times;</button>
+                <div class="menu-part moving-nav-links">
                     <a href="#">About Me</a>
                     <a href="#">Projects</a>
                     <a href="#">Contacts</a>
@@ -28,16 +26,7 @@
                 </div>
             </div>
         </nav>
-
     </div>
-    <script>
-        function openNav() {
-            document.getElementById('sideNav').style.width = "100%";
-        }
-        function closeNav() {
-            document.getElementById('sideNav').style.width = "0";
-        }
-    </script>
     <section>
         <h1>Projects</h1>
         <div class="projects-grid">
@@ -480,5 +469,7 @@
             </div>
         </div>
     </section>
+
+    <script src="../js/projects.js"></script>
 </body>
 </html>
