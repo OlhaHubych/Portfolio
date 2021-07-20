@@ -1,25 +1,6 @@
-@import "nav";
+@import "general";
 //--------------- variables ------------------
-@font-face {
-    font-family: forProjectsPage;
-    src: url(../fonts/Nunito/Nunito-Light.ttf);
-}
-@font-face {
-    font-family: forProjectsPageBold;
-    src: url(../fonts/Nunito/Nunito-Bold.ttf);
-}
-
 $fontSizeAllSection: 15px;
-
-$bgColorCard: #55719e;
-$colorCard: #f3e4bb; 
-$colorForImageBlockCard: white;
-$bgColorPopoutMenu: azure;
-$colorPopoutMenu: black;
-$colorForLinksInDescriptionBlock: #f3e4bb;
-$colorForVisitedLinksInDescriptionBlock: rgb(193, 193, 253);
-$bgColorForLinkButtonCard: #bed1e7;
-$colorBorderForLinkButtonCard: #08b6f1;
 
 $heightForImageBlockCard: 250px;
 $heightForPopoutMenuCard: 17px;
@@ -31,20 +12,21 @@ $lineHeightForLinkButtonCard: 37px;
 
 $roundedCornersPointCard: 1.8rem;
 $roundedCornersPointForLinkButtonCard: 20px;
-// #55719e
-// #4b78c1
+
 //----------------- style ---------------------
 
 section {
     width: 100%;
     height: fit-content;
     padding: 0 10px;
-    font-family: forProjectsPage;
+    font-family: forAllSite;
     font-size: $fontSizeAllSection;
 
     & > h1 {
-        font-family: forProjectsPageBold;
+        font-family: forAllSiteBold;
         text-align: center;
+        color: $mainColorBlue;
+        font-size: 1.9*$fontSizeAllSection;
     }
 
     .projects-grid {
@@ -53,15 +35,13 @@ section {
         gap: 10px;
         width: 100%;
         height: fit-content;
-        margin: 0;
+        margin-bottom: 10px;
     
         .block {
             align-self: stretch;
             height: 100%;
-            background-color: $bgColorCard;
-           
-
-            color: $colorCard;
+            background-color: $mainColorBlue;
+            color: $mainColorBeige;
             display: flex;
             flex-direction: column;
             border-radius: $roundedCornersPointCard;
@@ -135,7 +115,7 @@ section {
                 justify-content: space-between;
 
                 .mark-link-text > a {
-                    font-family: forProjectsPage;
+                    font-family: forAllSite;
                     color: $colorForLinksInDescriptionBlock;
 
                     &:visited {
@@ -155,7 +135,7 @@ section {
                         a {
                             display: block;
                             text-decoration: none;
-                            font-family: forProjectsPageBold;
+                            font-family: forAllSiteBold;
                             font-weight: bold;
                             line-height: $lineHeightForLinkButtonCard;
                             height: $heightForLinkButton;

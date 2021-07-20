@@ -1,34 +1,41 @@
-@import "projects"; //include fonts and colors
-@import "nav";
+@import "general";
+//--------------- variables ------------------
 
-body {
-    background-image: url(../img/bgAbout.png);
-    background-color: #F9FDFD;
-}
+$fontSizeText: 16px;
+$widthTextBlock: 70%;
+
+$widthFrontImg: 200px;
+$heightFrontImg: 250px;
+
+//-------------- styles ----------------------
+.bg-style-body {
+    background-image: $bgImg;
+    background-color: $mainBgColorBlue;
 
     main {
-        font-family: forProjectsPageBold;
-        font-size: 16px;
+        font-family: forAllSiteBold;
+        font-size: $fontSizeText;
 
         .text {
-            width: 70%;
+            width: $widthTextBlock;
             margin: 0 auto;
             text-align: justify;
             padding: 15px 0;
 
             h1 {
-                color: $bgColorCard;
+                color: $mainColorBlue;
             }
             h2 {
-                color: $colorMenuLink;
+                color: $mainColorGreen;
             }
             img {
                 float: right;
-                width: 200px;
-                height: 250px;
+                width: $widthFrontImg;
+                height: $heightFrontImg;
                 margin: 0 10px;
             }
-            
         }
     }
+
+}
 

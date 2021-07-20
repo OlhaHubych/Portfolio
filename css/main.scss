@@ -1,0 +1,12 @@
+@import "nav";
+
+//---------------- style for main page --------------------
+.img-part {
+    width: $widthNav - $widthMenu;
+
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}

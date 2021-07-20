@@ -166,4 +166,15 @@ nav .menu-part a:hover::after {
 .navigation-block .moving-nav .close-nav:hover {
   color: #008b8b;
 }
-/*# sourceMappingURL=nav.css.map */
+
+.img-part {
+  width: 55%;
+}
+
+.img-part img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */

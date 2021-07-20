@@ -1,6 +1,4 @@
-@import "nav";
-@import "projects";
-@import "about";
+@import "main", "projects", "about";
 
 * {
     box-sizing: border-box;

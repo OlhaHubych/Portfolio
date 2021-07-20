@@ -1,0 +1,33 @@
+//------------------------- fonts for all website -----------------------------------
+@font-face {
+    font-family: forAllSite;
+    src: url(../fonts/Nunito/Nunito-Light.ttf);
+}
+@font-face {
+    font-family: forAllSiteBold;
+    src: url(../fonts/Nunito/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: forNavigationLinks;
+    src: url(../fonts/Itim/Itim-Regular.ttf);
+}
+//--------------------------- main colors for all website ----------------------------
+$mainColorBlue: #55719e;
+$mainColorGreen: #517869;
+$mainColorBeige: #f3e4bb;
+$mainBgColorBeige: #fffcf4;
+$mainBgColorBlue: #F9FDFD;
+
+//--------------------------- colors for navigation part ----------------------------- 
+$colorMenuLinkHover: #008b8b;
+$colorMenuBullet: #9e9e9e;
+//--------------------------- colors for Projects page ------------------------------- 
+$colorForImageBlockCard: white;
+$bgColorPopoutMenu: azure;
+$colorPopoutMenu: black;
+$colorForLinksInDescriptionBlock: #f3e4bb;
+$colorForVisitedLinksInDescriptionBlock: #c1c1fd;
+$bgColorForLinkButtonCard: #bed1e7;
+$colorBorderForLinkButtonCard: #08b6f1;
+//--------------------------- colors for About page ------------------------------- 
+$bgImg: url(../img/bgAbout.png);
