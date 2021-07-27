@@ -23,9 +23,11 @@ $heightFrontImg: 250px;
             padding: 15px 0;
 
             h1 {
+                text-align: left;
                 color: $mainColorBlue;
             }
             h2 {
+                text-align: left;
                 color: $mainColorGreen;
             }
             img {
@@ -34,8 +36,36 @@ $heightFrontImg: 250px;
                 height: $heightFrontImg;
                 margin: 0 10px;
             }
+            p {
+                text-indent: 20px;
+                margin: 0;
+            }
+        }
+        
+        @media screen and (max-width: 320px) {
+            font-size: 0.7rem;
+            .text {
+                img {
+                    width: 60%;
+                    height: auto;
+                }
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 666px) {
+            font-size: 0.8rem;
+        }
+        @media screen and (max-width: 666px) {
+            .text {
+                width: 90%;
+                img {
+                    display: block;
+                    margin: 0 auto 10px;
+                    float: none;
+                }
+            }
         }
     }
-
 }
+
+
 

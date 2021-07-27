@@ -454,7 +454,7 @@ section .projects-grid .block .description ul li:last-child {
 }
 
 .bg-style-body {
-  background-image: url(../img/bgAbout.png);
+  background-image: url(../img/bg.png);
   background-color: #F9FDFD;
 }
 
@@ -471,10 +471,12 @@ section .projects-grid .block .description ul li:last-child {
 }
 
 .bg-style-body main .text h1 {
+  text-align: left;
   color: #55719e;
 }
 
 .bg-style-body main .text h2 {
+  text-align: left;
   color: #517869;
 }
 
@@ -483,6 +485,38 @@ section .projects-grid .block .description ul li:last-child {
   width: 200px;
   height: 250px;
   margin: 0 10px;
+}
+
+.bg-style-body main .text p {
+  text-indent: 20px;
+  margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .bg-style-body main {
+    font-size: 0.7rem;
+  }
+  .bg-style-body main .text img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 666px) {
+  .bg-style-body main {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .bg-style-body main .text {
+    width: 90%;
+  }
+  .bg-style-body main .text img {
+    display: block;
+    margin: 0 auto 10px;
+    float: none;
+  }
 }
 
 * {
