@@ -1,0 +1,15 @@
+@font-face {
+  font-family: forAllSite;
+  src: url(../fonts/Nunito/Nunito-Light.ttf);
+}
+
+@font-face {
+  font-family: forAllSiteBold;
+  src: url(../fonts/Nunito/Nunito-Bold.ttf);
+}
+
+@font-face {
+  font-family: forNavigationLinks;
+  src: url(../fonts/Itim/Itim-Regular.ttf);
+}
+/*# sourceMappingURL=contacts.css.map */
