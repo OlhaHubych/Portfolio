@@ -1,6 +1,81 @@
 @import "general";
 //--------------- variables ------------------
-
-
-
+$widthMain: 70%;
+$widthContactsList: 50%;
 //-------------- styles ----------------------
+main {
+    text-align: center;
+    width: $widthMain;
+    margin: 0 auto;
+    
+    h1 {
+        color: $mainColorBlue;
+    }
+
+    ul {
+        width: $widthContactsList;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+
+        li {
+            min-height: 3rem;
+            margin-bottom: 1rem;
+            padding: 0 3rem;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 0.3rem;
+            background-color: $mainColorBlue;
+        
+            &:nth-child(even) {
+                background-color: $mainColorGreen;
+            }
+
+            .icon-style {
+                color: $mainColorBeige;
+                font-size: 2rem;
+                transform: rotate(9deg);
+            }
+
+            a {
+                color: $mainColorBeige;
+            }   
+        } 
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    main {
+        width: 100%;
+        ul {
+            li {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 425px) {
+    main {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 425px) {
+    main {
+        ul {
+            li {
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    main {
+        ul {
+            width: 100%;
+        }
+    }
+}

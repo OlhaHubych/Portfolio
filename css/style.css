@@ -534,6 +534,94 @@ section .projects-grid .block .description ul li:last-child {
   src: url(../fonts/Itim/Itim-Regular.ttf);
 }
 
+main {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+main h1 {
+  color: #55719e;
+}
+
+main ul {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+main ul li {
+  min-height: 3rem;
+  margin-bottom: 1rem;
+  padding: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 0.3rem;
+  background-color: #55719e;
+}
+
+main ul li:nth-child(even) {
+  background-color: #517869;
+}
+
+main ul li .icon-style {
+  color: #f3e4bb;
+  font-size: 2rem;
+  -webkit-transform: rotate(9deg);
+          transform: rotate(9deg);
+}
+
+main ul li a {
+  color: #f3e4bb;
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    width: 100%;
+  }
+  main ul li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main ul li {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main ul {
+    width: 100%;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
