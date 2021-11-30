@@ -1,7 +1,5 @@
 @import "general";
 //--------------- variables ------------------
-$fontSizeAllSection: 15px;
-
 $heightForImageBlockCard: 250px;
 $heightForPopoutMenuCard: 17px;
 $widthForPopoutMenuCard: 70px;
@@ -10,9 +8,8 @@ $widthForFirstLinkButtonCard: 140px;
 $widthForLastLinkButtonCard: 40px;
 $lineHeightForLinkButtonCard: 37px;
 
-$roundedCornersPointCard: 1.8rem;
+$roundedCornersPointCard: 1.8em;
 $roundedCornersPointForLinkButtonCard: 20px;
-
 //----------------- style ---------------------
 
 section {
@@ -20,13 +17,16 @@ section {
     height: fit-content;
     padding: 0 10px;
     font-family: forAllSite;
-    font-size: $fontSizeAllSection;
 
     & > h1 {
         font-family: forAllSiteBold;
+        font-size: 2rem;
         text-align: center;
         color: $mainColorBlue;
-        font-size: 1.9*$fontSizeAllSection;
+
+        @media screen and (max-width: 425px) {
+            font-size: 1.5rem;
+        }
     }
 
     .projects-grid {

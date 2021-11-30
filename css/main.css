@@ -19,7 +19,6 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 15px;
 }
 
 nav .menu-part {
@@ -69,22 +68,22 @@ nav .menu-part a:hover::after {
 
 @media screen and (max-width: 320px) {
   nav .menu-part a {
-    font-size: 0.7rem;
-    height: 30px;
+    font-size: 1.5rem;
+    height: 35px;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 425px) {
   nav .menu-part a {
-    font-size: 1rem;
-    height: 35px;
+    font-size: 1.5rem;
+    height: 40px;
   }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   nav .menu-part a {
-    font-size: 1.5rem;
-    height: 40px;
+    font-size: 2rem;
+    height: 45px;
   }
 }
 
@@ -102,21 +101,24 @@ nav .menu-part a:hover::after {
 }
 
 .navigation-block .open-nav {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 59px;
   height: 59px;
   border: none;
-  margin-left: 25px;
   padding: 0;
   background-color: #fffcf4;
   color: #517869;
-  font-size: 50px;
+  font-size: 2rem;
   cursor: pointer;
 }
 
 .navigation-block .open-nav:hover {
   color: #008b8b;
+}
+
+@media screen and (min-width: 769px) {
+  .navigation-block .open-nav {
+    font-size: 2.5rem;
+  }
 }
 
 .navigation-block .moving-nav {
@@ -150,13 +152,11 @@ nav .menu-part a:hover::after {
 .navigation-block .moving-nav .close-nav {
   position: absolute;
   top: 0;
-  left: 25px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  left: 0;
+  width: 59px;
   height: 59px;
   padding: 0;
-  font-size: 50px;
+  font-size: 2rem;
   border: none;
   background-color: #fffcf4;
   color: #517869;
@@ -165,6 +165,12 @@ nav .menu-part a:hover::after {
 
 .navigation-block .moving-nav .close-nav:hover {
   color: #008b8b;
+}
+
+@media screen and (min-width: 769px) {
+  .navigation-block .moving-nav .close-nav {
+    font-size: 2.5rem;
+  }
 }
 
 .img-part {

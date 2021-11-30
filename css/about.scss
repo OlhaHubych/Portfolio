@@ -1,7 +1,6 @@
 @import "general";
 //--------------- variables ------------------
 
-$fontSizeText: 16px;
 $widthTextBlock: 70%;
 
 $widthFrontImg: 200px;
@@ -12,10 +11,10 @@ $heightFrontImg: 250px;
     background-image: $bgImg;
     background-color: $mainBgColorBlue;
 
-    main {
+    .about {
         font-family: forAllSiteBold;
-        font-size: $fontSizeText;
-
+        font-size: 1rem;
+                                                
         .text {
             width: $widthTextBlock;
             margin: 0 auto;
@@ -41,20 +40,31 @@ $heightFrontImg: 250px;
                 margin: 0;
             }
         }
-        
         @media screen and (max-width: 320px) {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             .text {
+                width: 90%;
                 img {
+                    display: block;
+                    margin: 0 auto 10px;
+                    float: none;
                     width: 60%;
                     height: auto;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 425px) {
+            .text {
+                font-size: 0.9rem;
+                h1 {
+                    font-size: 1.5rem;
                 }
             }
         }
         @media screen and (min-width: 321px) and (max-width: 666px) {
-            font-size: 0.8rem;
-        }
-        @media screen and (max-width: 666px) {
             .text {
                 width: 90%;
                 img {
@@ -64,6 +74,7 @@ $heightFrontImg: 250px;
                 }
             }
         }
+
     }
 }
 

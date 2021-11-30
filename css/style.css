@@ -19,7 +19,6 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 15px;
 }
 
 nav .menu-part {
@@ -69,22 +68,22 @@ nav .menu-part a:hover::after {
 
 @media screen and (max-width: 320px) {
   nav .menu-part a {
-    font-size: 0.7rem;
-    height: 30px;
+    font-size: 1.5rem;
+    height: 35px;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 425px) {
   nav .menu-part a {
-    font-size: 1rem;
-    height: 35px;
+    font-size: 1.5rem;
+    height: 40px;
   }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   nav .menu-part a {
-    font-size: 1.5rem;
-    height: 40px;
+    font-size: 2rem;
+    height: 45px;
   }
 }
 
@@ -102,21 +101,24 @@ nav .menu-part a:hover::after {
 }
 
 .navigation-block .open-nav {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 59px;
   height: 59px;
   border: none;
-  margin-left: 25px;
   padding: 0;
   background-color: #fffcf4;
   color: #517869;
-  font-size: 50px;
+  font-size: 2rem;
   cursor: pointer;
 }
 
 .navigation-block .open-nav:hover {
   color: #008b8b;
+}
+
+@media screen and (min-width: 769px) {
+  .navigation-block .open-nav {
+    font-size: 2.5rem;
+  }
 }
 
 .navigation-block .moving-nav {
@@ -150,13 +152,11 @@ nav .menu-part a:hover::after {
 .navigation-block .moving-nav .close-nav {
   position: absolute;
   top: 0;
-  left: 25px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  left: 0;
+  width: 59px;
   height: 59px;
   padding: 0;
-  font-size: 50px;
+  font-size: 2rem;
   border: none;
   background-color: #fffcf4;
   color: #517869;
@@ -165,6 +165,12 @@ nav .menu-part a:hover::after {
 
 .navigation-block .moving-nav .close-nav:hover {
   color: #008b8b;
+}
+
+@media screen and (min-width: 769px) {
+  .navigation-block .moving-nav .close-nav {
+    font-size: 2.5rem;
+  }
 }
 
 .img-part {
@@ -200,14 +206,19 @@ section {
   height: fit-content;
   padding: 0 10px;
   font-family: forAllSite;
-  font-size: 15px;
 }
 
 section > h1 {
   font-family: forAllSiteBold;
+  font-size: 2rem;
   text-align: center;
   color: #55719e;
-  font-size: 28.5px;
+}
+
+@media screen and (max-width: 425px) {
+  section > h1 {
+    font-size: 1.5rem;
+  }
 }
 
 section .projects-grid {
@@ -236,7 +247,7 @@ section .projects-grid .block {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 1.8rem;
+  border-radius: 1.8em;
   text-align: center;
 }
 
@@ -257,7 +268,7 @@ section .projects-grid .block .image {
 section .projects-grid .block .image img {
   width: 100%;
   height: 250px;
-  border-radius: 1.8rem;
+  border-radius: 1.8em;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -269,8 +280,8 @@ section .projects-grid .block .image .tech-btn {
   height: fit-content;
   padding: 10px;
   font-size: 1.15rem;
-  border-bottom-left-radius: 1.8rem;
-  border-bottom-right-radius: 1.8rem;
+  border-bottom-left-radius: 1.8em;
+  border-bottom-right-radius: 1.8em;
   -webkit-backdrop-filter: blur(2px) brightness(0.8);
           backdrop-filter: blur(2px) brightness(0.8);
   position: absolute;
@@ -458,61 +469,73 @@ section .projects-grid .block .description ul li:last-child {
   background-color: #F9FDFD;
 }
 
-.bg-style-body main {
+.bg-style-body .about {
   font-family: forAllSiteBold;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
-.bg-style-body main .text {
+.bg-style-body .about .text {
   width: 70%;
   margin: 0 auto;
   text-align: justify;
   padding: 15px 0;
 }
 
-.bg-style-body main .text h1 {
+.bg-style-body .about .text h1 {
   text-align: left;
   color: #55719e;
 }
 
-.bg-style-body main .text h2 {
+.bg-style-body .about .text h2 {
   text-align: left;
   color: #517869;
 }
 
-.bg-style-body main .text img {
+.bg-style-body .about .text img {
   float: right;
   width: 200px;
   height: 250px;
   margin: 0 10px;
 }
 
-.bg-style-body main .text p {
+.bg-style-body .about .text p {
   text-indent: 20px;
   margin: 0;
 }
 
 @media screen and (max-width: 320px) {
-  .bg-style-body main {
-    font-size: 0.7rem;
+  .bg-style-body .about {
+    font-size: 0.8rem;
   }
-  .bg-style-body main .text img {
+  .bg-style-body .about .text {
+    width: 90%;
+  }
+  .bg-style-body .about .text img {
+    display: block;
+    margin: 0 auto 10px;
+    float: none;
     width: 60%;
     height: auto;
+  }
+  .bg-style-body .about .text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  .bg-style-body .about .text {
+    font-size: 0.9rem;
+  }
+  .bg-style-body .about .text h1 {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 666px) {
-  .bg-style-body main {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 666px) {
-  .bg-style-body main .text {
+  .bg-style-body .about .text {
     width: 90%;
   }
-  .bg-style-body main .text img {
+  .bg-style-body .about .text img {
     display: block;
     margin: 0 auto 10px;
     float: none;
@@ -534,17 +557,20 @@ section .projects-grid .block .description ul li:last-child {
   src: url(../fonts/Itim/Itim-Regular.ttf);
 }
 
-main {
+.contacts {
+  font-family: forAllSiteBold;
+  font-size: 1.15rem;
   text-align: center;
   width: 70%;
   margin: 0 auto;
 }
 
-main h1 {
+.contacts h1 {
   color: #55719e;
+  font-size: 2rem;
 }
 
-main ul {
+.contacts ul {
   width: 50%;
   margin: 0 auto;
   display: -webkit-box;
@@ -558,10 +584,10 @@ main ul {
   padding: 0;
 }
 
-main ul li {
-  min-height: 3rem;
-  margin-bottom: 1rem;
-  padding: 0 3rem;
+.contacts ul li {
+  min-height: 3em;
+  margin-bottom: 1em;
+  padding: 0 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,51 +601,64 @@ main ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-radius: 0.3rem;
+  border-radius: 0.3em;
   background-color: #55719e;
 }
 
-main ul li:nth-child(even) {
+.contacts ul li:nth-child(even) {
   background-color: #517869;
 }
 
-main ul li .icon-style {
+.contacts ul li .icon-style {
   color: #f3e4bb;
   font-size: 2rem;
   -webkit-transform: rotate(9deg);
           transform: rotate(9deg);
 }
 
-main ul li a {
+.contacts ul li a {
   color: #f3e4bb;
 }
 
 @media screen and (max-width: 320px) {
-  main {
+  .contacts {
     width: 100%;
+    font-size: 0.9rem;
+    padding: 0 15px;
   }
-  main ul li {
+  .contacts h1 {
+    font-size: 1.5rem;
+  }
+  .contacts ul li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 425px) {
-  main {
+  .contacts {
     width: 90%;
+    font-size: 0.9rem;
+  }
+  .contacts h1 {
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 425px) {
-  main ul li {
-    padding: 0 1rem;
+@media screen and (max-width: 500px) {
+  .contacts ul li {
+    padding: 0 1em;
   }
 }
 
 @media screen and (max-width: 900px) {
-  main ul {
+  .contacts ul {
     width: 100%;
   }
+}
+
+html {
+  font-size: 15px;
 }
 
 * {

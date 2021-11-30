@@ -18,61 +18,73 @@
   background-color: #F9FDFD;
 }
 
-.bg-style-body main {
+.bg-style-body .about {
   font-family: forAllSiteBold;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
-.bg-style-body main .text {
+.bg-style-body .about .text {
   width: 70%;
   margin: 0 auto;
   text-align: justify;
   padding: 15px 0;
 }
 
-.bg-style-body main .text h1 {
+.bg-style-body .about .text h1 {
   text-align: left;
   color: #55719e;
 }
 
-.bg-style-body main .text h2 {
+.bg-style-body .about .text h2 {
   text-align: left;
   color: #517869;
 }
 
-.bg-style-body main .text img {
+.bg-style-body .about .text img {
   float: right;
   width: 200px;
   height: 250px;
   margin: 0 10px;
 }
 
-.bg-style-body main .text p {
+.bg-style-body .about .text p {
   text-indent: 20px;
   margin: 0;
 }
 
 @media screen and (max-width: 320px) {
-  .bg-style-body main {
-    font-size: 0.7rem;
+  .bg-style-body .about {
+    font-size: 0.8rem;
   }
-  .bg-style-body main .text img {
+  .bg-style-body .about .text {
+    width: 90%;
+  }
+  .bg-style-body .about .text img {
+    display: block;
+    margin: 0 auto 10px;
+    float: none;
     width: 60%;
     height: auto;
+  }
+  .bg-style-body .about .text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  .bg-style-body .about .text {
+    font-size: 0.9rem;
+  }
+  .bg-style-body .about .text h1 {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 666px) {
-  .bg-style-body main {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 666px) {
-  .bg-style-body main .text {
+  .bg-style-body .about .text {
     width: 90%;
   }
-  .bg-style-body main .text img {
+  .bg-style-body .about .text img {
     display: block;
     margin: 0 auto 10px;
     float: none;

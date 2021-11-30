@@ -2,22 +2,17 @@
 //--------------- nav variables for the main page -----------------------
 $widthNav: 100%;
 $heightNav: 100vh;
-$fontSizeNav: 15px;
 
 $widthMenu: 45%;
 $heightMenuLink: 50px;
-
 //-------------------- nav variables for all pages -----------------------
 $navBlockHeight: 60px;
-$leftPositionCloseBtn: 25px;
-$fontSizeCloseOpenBtns: 50px;
 
 //-------------------- nav style for the main page -----------------------
 nav {
     height: $heightNav;
     width: $widthNav;
     display: flex;
-    font-size: $fontSizeNav;
 
     .menu-part {
         width: $widthMenu;
@@ -50,16 +45,16 @@ nav {
             }
 
             @media screen and (max-width: 320px) {
-                font-size: 0.7rem;
-                height: $heightMenuLink - 20px;
-            }
-            @media screen and (min-width: 321px) and (max-width: 425px) {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 height: $heightMenuLink - 15px;
             }
-            @media screen and (min-width: 426px) and (max-width: 768px) {
+            @media screen and (min-width: 321px) and (max-width: 425px) {
                 font-size: 1.5rem;
                 height: $heightMenuLink - 10px;
+            }
+            @media screen and (min-width: 426px) and (max-width: 768px) {
+                font-size: 2rem;
+                height: $heightMenuLink - 5px;
             }
         }
     }
@@ -76,18 +71,20 @@ nav {
     justify-content: space-between;
 
     .open-nav {
-        width: fit-content;
+        width: $navBlockHeight - 1px;
         height: $navBlockHeight - 1px;
         border: none;
-        margin-left: $leftPositionCloseBtn;
         padding: 0;
         background-color: $mainBgColorBeige;
         color: $mainColorGreen;
-        font-size: $fontSizeCloseOpenBtns;
+        font-size: 2rem;
         cursor: pointer;
 
         &:hover {
             color: $colorMenuLinkHover;
+        }
+        @media screen and (min-width: 769px) {
+            font-size: 2.5rem;
         }
     }
 
@@ -115,11 +112,11 @@ nav {
         .close-nav {
             position: absolute;
             top: 0;
-            left: $leftPositionCloseBtn;
-            width: fit-content;
+            left: 0;
+            width: $navBlockHeight - 1px;
             height: $navBlockHeight - 1px;
             padding: 0;
-            font-size: $fontSizeCloseOpenBtns;
+            font-size: 2rem;
             border: none;
             background-color: $mainBgColorBeige;
             color: $mainColorGreen;
@@ -127,6 +124,10 @@ nav {
 
             &:hover {
                 color: $colorMenuLinkHover;
+            }
+
+            @media screen and (min-width: 769px) {
+                font-size: 2.5rem;
             }
         }
     }

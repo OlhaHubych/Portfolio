@@ -3,13 +3,16 @@
 $widthMain: 70%;
 $widthContactsList: 50%;
 //-------------- styles ----------------------
-main {
+.contacts {
+    font-family: forAllSiteBold;
+    font-size: 1.15rem;
     text-align: center;
     width: $widthMain;
     margin: 0 auto;
     
     h1 {
         color: $mainColorBlue;
+        font-size: 2rem;
     }
 
     ul {
@@ -21,14 +24,14 @@ main {
         padding: 0;
 
         li {
-            min-height: 3rem;
-            margin-bottom: 1rem;
-            padding: 0 3rem;
+            min-height: 3em;
+            margin-bottom: 1em;
+            padding: 0 3em;
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
             justify-content: space-between;
-            border-radius: 0.3rem;
+            border-radius: 0.3em;
             background-color: $mainColorBlue;
         
             &:nth-child(even) {
@@ -49,8 +52,15 @@ main {
     
 }
 @media screen and (max-width: 320px) {
-    main {
+    .contacts {
         width: 100%;
+        font-size: 0.9rem;
+        padding: 0 15px;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
         ul {
             li {
                 flex-wrap: wrap;
@@ -59,21 +69,27 @@ main {
     }
 }
 @media screen and (min-width: 321px) and (max-width: 425px) {
-    main {
+    .contacts {
         width: 90%;
+        font-size: 0.9rem;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+        
     }
 }
-@media screen and (max-width: 425px) {
-    main {
+@media screen and (max-width: 500px) {
+    .contacts {
         ul {
             li {
-                padding: 0 1rem;
+                padding: 0 1em;
             }
         }
     }
 }
 @media screen and (max-width: 900px) {
-    main {
+    .contacts {
         ul {
             width: 100%;
         }
