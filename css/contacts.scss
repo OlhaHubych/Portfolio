@@ -95,3 +95,12 @@ $widthContactsList: 50%;
         }
     }
 }
+@media screen and (min-width: 901px) and (max-width: 960px) {
+    .contacts {
+        ul {
+            li {
+                padding: 0 1em;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 @import "general";
 //--------------- variables ------------------
-$heightForImageBlockCard: 250px;
+$heightForImageBlockCard: 200px;
 $heightForPopoutMenuCard: 17px;
 $widthForPopoutMenuCard: 70px;
 $heightForLinkButton: 40px;
@@ -8,7 +8,7 @@ $widthForFirstLinkButtonCard: 140px;
 $widthForLastLinkButtonCard: 40px;
 $lineHeightForLinkButtonCard: 37px;
 
-$roundedCornersPointCard: 1.8em;
+$roundedCornersPointCard: 2em;
 $roundedCornersPointForLinkButtonCard: 20px;
 //----------------- style ---------------------
 
@@ -67,8 +67,8 @@ section {
                     height: fit-content;
                     padding: 10px;
                     font-size: 1.15rem;
-                    border-bottom-left-radius: $roundedCornersPointCard;
-                    border-bottom-right-radius: $roundedCornersPointCard;
+                    border-bottom-left-radius: $roundedCornersPointCard - 0.3em;
+                    border-bottom-right-radius: $roundedCornersPointCard - 0.3em;
                     backdrop-filter: blur(2px) brightness(0.8);
                     position: absolute;
                     bottom: -0.5%;
