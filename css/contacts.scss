@@ -24,29 +24,33 @@ $widthContactsList: 50%;
         padding: 0;
 
         li {
-            min-height: 3em;
-            margin-bottom: 1em;
-            padding: 0 3em;
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 0.3em;
-            background-color: $mainColorBlue;
-        
-            &:nth-child(even) {
-                background-color: $mainColorGreen;
-            }
-
-            .icon-style {
-                color: $mainColorBeige;
-                font-size: 2rem;
-                transform: rotate(9deg);
-            }
-
             a {
+                display: flex;
+                width: 100%;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+                min-height: 3em;
+                margin-bottom: 1em;
+                padding: 0 3em;
+                border-radius: 0.3em;
+                background-color: $mainColorBlue;
                 color: $mainColorBeige;
-            }   
+                text-decoration: none;
+
+                
+                .icon-style {
+                    color: $mainColorBeige;
+                    font-size: 2rem;
+                    transform: rotate(9deg);
+                }
+            } 
+
+            &:nth-child(even) {
+                a {
+                    background-color: $mainColorGreen;
+                }
+            }
         } 
     }
     
@@ -63,7 +67,9 @@ $widthContactsList: 50%;
 
         ul {
             li {
-                flex-wrap: wrap;
+                a {
+                    flex-wrap: wrap;
+                }
             }
         }
     }
@@ -83,7 +89,9 @@ $widthContactsList: 50%;
     .contacts {
         ul {
             li {
-                padding: 0 1em;
+                a {
+                    padding: 0 1em;
+                }
             }
         }
     }
@@ -99,7 +107,9 @@ $widthContactsList: 50%;
     .contacts {
         ul {
             li {
-                padding: 0 1em;
+                a {
+                    padding: 0 1em;
+                }
             }
         }
     }

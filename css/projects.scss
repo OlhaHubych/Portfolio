@@ -1,7 +1,6 @@
 @import "general";
 //--------------- variables ------------------
 $heightForImageBlockCard: 200px;
-$heightForPopoutMenuCard: 17px;
 $widthForPopoutMenuCard: 70px;
 $heightForLinkButton: 40px;
 $widthForFirstLinkButtonCard: 140px;
@@ -65,7 +64,7 @@ section {
                 .tech-btn {
                     width: 100%;
                     height: fit-content;
-                    padding: 10px;
+                    padding: 10px 0;
                     font-size: 1.15rem;
                     border-bottom-left-radius: $roundedCornersPointCard - 0.3em;
                     border-bottom-right-radius: $roundedCornersPointCard - 0.3em;
@@ -82,6 +81,7 @@ section {
 
                         li {
                             position: relative;
+                            line-height: 1;
 
                             .popout-menu {
                                 position: absolute;
@@ -89,7 +89,7 @@ section {
                                 left: -180%;
                                 visibility: hidden;
                                 width: $widthForPopoutMenuCard;
-                                height: $heightForPopoutMenuCard;
+                                padding: 2px 0;
                                 background-color: $bgColorPopoutMenu;
                                 color: $colorPopoutMenu;
                                 font-size: 0.8rem;

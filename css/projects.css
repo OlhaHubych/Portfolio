@@ -92,7 +92,7 @@ section .projects-grid .block .image .tech-btn {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 1.15rem;
   border-bottom-left-radius: 1.7em;
   border-bottom-right-radius: 1.7em;
@@ -116,6 +116,7 @@ section .projects-grid .block .image .tech-btn ul {
 
 section .projects-grid .block .image .tech-btn ul li {
   position: relative;
+  line-height: 1;
 }
 
 section .projects-grid .block .image .tech-btn ul li .popout-menu {
@@ -124,7 +125,7 @@ section .projects-grid .block .image .tech-btn ul li .popout-menu {
   left: -180%;
   visibility: hidden;
   width: 70px;
-  height: 17px;
+  padding: 2px 0;
   background-color: azure;
   color: black;
   font-size: 0.8rem;

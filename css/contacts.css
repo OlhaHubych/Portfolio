@@ -40,13 +40,11 @@
   padding: 0;
 }
 
-.contacts ul li {
-  min-height: 3em;
-  margin-bottom: 1em;
-  padding: 0 3em;
+.contacts ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -57,23 +55,24 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-height: 3em;
+  margin-bottom: 1em;
+  padding: 0 3em;
   border-radius: 0.3em;
   background-color: #55719e;
+  color: #f3e4bb;
+  text-decoration: none;
 }
 
-.contacts ul li:nth-child(even) {
-  background-color: #517869;
-}
-
-.contacts ul li .icon-style {
+.contacts ul li a .icon-style {
   color: #f3e4bb;
   font-size: 2rem;
   -webkit-transform: rotate(9deg);
           transform: rotate(9deg);
 }
 
-.contacts ul li a {
-  color: #f3e4bb;
+.contacts ul li:nth-child(even) a {
+  background-color: #517869;
 }
 
 @media screen and (max-width: 320px) {
@@ -85,7 +84,7 @@
   .contacts h1 {
     font-size: 1.5rem;
   }
-  .contacts ul li {
+  .contacts ul li a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -102,7 +101,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .contacts ul li {
+  .contacts ul li a {
     padding: 0 1em;
   }
 }
@@ -114,7 +113,7 @@
 }
 
 @media screen and (min-width: 901px) and (max-width: 960px) {
-  .contacts ul li {
+  .contacts ul li a {
     padding: 0 1em;
   }
 }
