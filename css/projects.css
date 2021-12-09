@@ -92,7 +92,6 @@ section .projects-grid .block .image .tech-btn {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 10px 0;
   font-size: 1.15rem;
   border-bottom-left-radius: 1.7em;
   border-bottom-right-radius: 1.7em;
@@ -105,7 +104,7 @@ section .projects-grid .block .image .tech-btn {
 section .projects-grid .block .image .tech-btn ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

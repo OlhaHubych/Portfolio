@@ -66,13 +66,13 @@ nav {
     width: 100%;
     height: $navBlockHeight;
     background-color: $mainBgColorBeige;
-    border-bottom: 1px solid $mainColorGreen;
+    border-bottom: 3px solid $mainColorGreen;
     display: flex;
     justify-content: space-between;
 
     .open-nav {
-        width: $navBlockHeight - 1px;
-        height: $navBlockHeight - 1px;
+        width: $navBlockHeight - 3px;
+        height: $navBlockHeight - 3px;
         border: none;
         padding: 0;
         background-color: $mainBgColorBeige;
