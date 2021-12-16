@@ -70,6 +70,8 @@ section {
                     backdrop-filter: blur(2px) brightness(0.8);
                     position: absolute;
                     bottom: -0.5%;
+                    user-select: none;
+                    outline: none;
 
                     ul {
                         list-style: none;
@@ -77,11 +79,13 @@ section {
                         margin: 10px 0;
                         display: flex;
                         justify-content: space-evenly;
+                        outline: none;
 
                         li {
                             position: relative;
                             line-height: 1;
-
+                            outline: none;
+                            
                             .popout-menu {
                                 position: absolute;
                                 bottom: 100%;
@@ -92,15 +96,16 @@ section {
                                 background-color: $bgColorPopoutMenu;
                                 color: $colorPopoutMenu;
                                 font-size: 0.8rem;
+                                outline: none;
                             }
-
-                            &:hover > .popout-menu,
-                            &:focus > .popout-menu,
-                            &:focus-within > .popout-menu {
-                                visibility: visible;
+                            /*
+                            .fab {
+                                &:hover + .popout-menu {
+                                    visibility: visible;
+                                }
                             }
+                            */
                         }
-
                     }
                 }
             }
@@ -152,6 +157,18 @@ section {
                             width: $widthForLastLinkButtonCard;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@supports (-moz-appearance: none) {
+    section {
+        .projects-grid {
+            .block {
+                .tech-btn {
+                    background: rgba(125, 125, 118, 0.7);
                 }
             }
         }

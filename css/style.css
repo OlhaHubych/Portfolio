@@ -285,6 +285,11 @@ section .projects-grid .block .image .tech-btn {
           backdrop-filter: blur(2px) brightness(0.8);
   position: absolute;
   bottom: -0.5%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
 }
 
 section .projects-grid .block .image .tech-btn ul {
@@ -297,11 +302,20 @@ section .projects-grid .block .image .tech-btn ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  outline: none;
 }
 
 section .projects-grid .block .image .tech-btn ul li {
   position: relative;
   line-height: 1;
+  outline: none;
+  /*
+                            .fab {
+                                &:hover + .popout-menu {
+                                    visibility: visible;
+                                }
+                            }
+                            */
 }
 
 section .projects-grid .block .image .tech-btn ul li .popout-menu {
@@ -314,12 +328,7 @@ section .projects-grid .block .image .tech-btn ul li .popout-menu {
   background-color: azure;
   color: black;
   font-size: 0.8rem;
-}
-
-section .projects-grid .block .image .tech-btn ul li:hover > .popout-menu,
-section .projects-grid .block .image .tech-btn ul li:focus > .popout-menu,
-section .projects-grid .block .image .tech-btn ul li:focus-within > .popout-menu {
-  visibility: visible;
+  outline: none;
 }
 
 section .projects-grid .block .description {
@@ -378,6 +387,12 @@ section .projects-grid .block .description ul li:first-child {
 
 section .projects-grid .block .description ul li:last-child {
   width: 40px;
+}
+
+@supports (-moz-appearance: none) {
+  section .projects-grid .block .tech-btn {
+    background: rgba(125, 125, 118, 0.7);
+  }
 }
 
 @media screen and (max-width: 250px) {
