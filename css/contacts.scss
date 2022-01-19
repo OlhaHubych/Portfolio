@@ -53,6 +53,65 @@ $widthContactsList: 50%;
             }
         } 
     }
+    .formMsgBox {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+         
+        & > label {
+            align-self: flex-start;
+        }
+
+        .textBox {
+            resize: none;
+            border: 2px solid $mainColorGreen;
+            border-radius: 0.3em;
+            margin-bottom: 1em;
+            font-family: forAllSite;
+            font-size: 1.15rem;
+            outline: none;
+            background-color: $mainBgColorBeige;
+
+            &:focus {
+                border-color: $mainColorBlue;
+            }
+        }
+        .emailBox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin-bottom: 1em;
+
+            label {
+                margin-right: 0.5em;
+            }
+            input {
+                flex-grow: 1;
+                border: 2px solid $mainColorGreen;
+                border-radius: 0.3em;
+                font-family: forAllSite;
+                font-size: 1.15rem;
+                outline: none;
+                background-color: $mainBgColorBeige;
+
+                &:focus {
+                    border-color: $mainColorBlue;
+                }
+            }  
+        }
+        .sendMsgBtn {
+            width: $widthContactsList/2;
+            align-self: flex-end;
+            outline: none;
+            margin-bottom: 1em;
+            border-color: $mainColorGreen;
+            border-radius: 0.3em;
+            background-color: $mainColorGreen;
+            color: $mainColorBeige;
+            font-family: forAllSiteBold;
+            font-size: 1rem;
+        }
+    }
     
 }
 @media screen and (max-width: 320px) {
