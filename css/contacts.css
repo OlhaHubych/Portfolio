@@ -110,11 +110,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 1em;
 }
 
@@ -149,7 +147,7 @@
   background-color: #517869;
   color: #f3e4bb;
   font-family: forAllSiteBold;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 @media screen and (max-width: 320px) {
@@ -165,6 +163,11 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .contacts .formMsgBox .emailBox > input,
+  .contacts .formMsgBox .textBox,
+  .contacts .formMsgBox .sendMsgBtn {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 425px) {
@@ -175,11 +178,29 @@
   .contacts h1 {
     font-size: 1.5rem;
   }
+  .contacts .formMsgBox .emailBox > input,
+  .contacts .formMsgBox .textBox,
+  .contacts .formMsgBox .sendMsgBtn {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .contacts ul li a {
     padding: 0 1em;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .contacts .formMsgBox .emailBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts .formMsgBox .emailBox > label {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
@@ -192,6 +213,12 @@
 @media screen and (min-width: 901px) and (max-width: 960px) {
   .contacts ul li a {
     padding: 0 1em;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .formMsgBox {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=contacts.css.map */
